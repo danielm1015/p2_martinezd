@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DisplayPage } from '../display/display';
 
-/**
- * Generated class for the SignInPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -20,6 +15,10 @@ export class SignInPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignInPage');
+  }
+  
+  goToDisplay(){
+    this.navCtrl.push(DisplayPage);
   }
 
 }
